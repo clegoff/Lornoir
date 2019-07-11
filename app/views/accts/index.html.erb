@@ -1,0 +1,35 @@
+<h2>Connexion</h2>
+
+
+<br><br>
+
+
+<h2>Inscription </h2>
+
+<%= form_for :compte , url: posts_path do |f| %>
+    <p>
+        <%= f.label :name %> <br>
+        <%= f.text_field(:name, {:class => 'form-control'}) %>
+    </p>
+    <p>
+        <%= f.label :lastname %><br>
+        <%= f.text_field(:lastname, {:class => 'form-control'}) %>
+    </p>
+    <p>
+        <%= f.label :email %><br>
+        <%= f.text_field(:email, {:class => 'form-control'}) %>
+    </p>
+    <p>
+      <%= f.label :password %><br>
+      <%= f.text_field(:password, {:class => 'form-control'}) %>
+    </p>
+    <p>
+        <%= f.label :suser %>
+        <%= f.check_box(:suser, {:class => 'form-control'}) %>
+    </p>
+
+    <p>
+        <%= f.submit({:class => 'btn btn-success'}) %>
+    </p>
+
+  <% end %>

@@ -3,6 +3,10 @@ class PostsController < ApplicationController
     @articles = Article.all
   end
 
+  def signup
+
+  end
+
   def show
     @article = Article.find(params[:id])
   end
@@ -15,13 +19,13 @@ class PostsController < ApplicationController
     @article = Article.new(post_params)
 
     if (@article.save)
-      redirect_to @article
+      # redirect_to @article
     else
       render 'new'
     end
   end
 
   private def post_params
-    params.require(:post).permit(:title, :body)
+    params.require(:article).permit(:title, :body, :price, :path)
   end
 end
