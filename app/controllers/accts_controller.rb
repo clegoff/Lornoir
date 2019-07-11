@@ -5,7 +5,7 @@ class AcctsController < ApplicationController
     end
 
     def create
-        @compte = Compte.new(post_params)
+        @compte = Compte.new(acct_params)
 
         # if (@compte.save)
         #     redirect_to @compte
@@ -14,9 +14,11 @@ class AcctsController < ApplicationController
         # end
 
         @compte.save
+
+
     end
 
-    private def post_params
+    private def acct_params
         params.require(:compte).permit(:name, :lastname, :email, :password, :suser)
     end
 
