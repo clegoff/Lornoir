@@ -3,10 +3,6 @@ class PostsController < ApplicationController
         @articles = Article.all
     end
 
-    def signup
-
-    end
-
     def show
         @article = Article.find(params[:id])
     end

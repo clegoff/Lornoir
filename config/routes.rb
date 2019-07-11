@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  get 'accts/index'
-  get 'posts/index'
+    devise_for :users, controllers: {
+        sessions: 'users/sessions'
+    }
+    root 'posts#index'
 
-  resources :posts
-  resources :accts
+    get 'posts/index'
+
+    resources :posts, :accts
 end
