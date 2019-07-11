@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'accts/login'
+  get 'accts/index'
   get 'posts/index'
 
   resources :posts
