@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Lornoir - Pierres précieuses</title>
-        <%= csrf_meta_tags %>
-        <%= csp_meta_tag %>
-        <%= stylesheet_link_tag    'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' %>
-        <%= javascript_include_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' %>
-    </head>
+<head>
+  <meta charset="utf-8">
+  <title>Lornoir - Pierres précieuses</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag    'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' %>
+  <%= javascript_include_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' %>
+</head>
 
-  <body>
-    <div class="jumbotron text-center">
-        <div class="container">
-            <h1 class="display-3">Pierres précieuses</h1>
-        </div>
+<body>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1 class="display-3">Pierres précieuses</h1>
+  </div>
+</div>
+
+<div style="padding:0px 60px;">
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Péridot</h2>
+      <p class="lead">Les cristaux de péridot ont probablement été exploités dès le Ier millénaire av. J.-C. dans la petite île de Zabargad, située en mer Rouge près de la péninsule de Ras Banas en Égypte. Le gisement de péridots de Zabargad est le plus célèbre et le plus important historiquement, mais il est aujourd&apos;hui abandonné.</p>
+      <p class="lead">Deux origines ont été proposées pour ce vocable : le mot arabe faridat (« pierre précieuse, perle »), ou, par métathèse, le mot latin paederos, dérivé du grec Παιδέρως, composé de παιδός (« jeune garçon ») et έρως (« amour »). D’après Pline l’Ancien, le paedéros « se trouve… à la tête des pierres blanches… et il est devenu, par privilège, synonyme de beauté…et mérite spécialement un si beau nom ; car il réunit la transparence du cristal, le vert particulier de l&apos;air… Nulle pierre n&apos;a une plus belle eau ; nulle ne captive plus agréablement et plus doucement les yeux ».<p>
     </div>
-    
-    <div style="padding:0px 60px;">
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Péridot</h2>
-        <p class="lead">Les cristaux de péridot ont probablement été exploités dès le Ier millénaire av. J.-C. dans la petite île de Zabargad, située en mer Rouge près de la péninsule de Ras Banas en Égypte. Le gisement de péridots de Zabargad est le plus célèbre et le plus important historiquement, mais il est aujourd&apos;hui abandonné.</p>
-        <p class="lead">Deux origines ont été proposées pour ce vocable : le mot arabe faridat (« pierre précieuse, perle »), ou, par métathèse, le mot latin paederos, dérivé du grec Παιδέρως, composé de παιδός (« jeune garçon ») et έρως (« amour »). D’après Pline l’Ancien, le paedéros « se trouve… à la tête des pierres blanches… et il est devenu, par privilège, synonyme de beauté…et mérite spécialement un si beau nom ; car il réunit la transparence du cristal, le vert particulier de l&apos;air… Nulle pierre n&apos;a une plus belle eau ; nulle ne captive plus agréablement et plus doucement les yeux ».<p>
-        </div>
-      <div class="col-md-5">
+    <div class="col-md-5">
       <%= image_tag "peridot.jpg", :alt => "peridot", :width => "100%", :height => "100%", :focusable => "false" %>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Amétrine</h2>
-        <p class="lead">L’amétrine est une variété gemme de quartz qui n&apos;est pas une variété d&apos;améthyste mais un mélange de citrine et d&apos;améthyste. Elle possède des couleurs très diverses qui vont des jaunes jusqu&apos;à la gamme des lilas, et des violets profonds.</p>
-        <p class="lead">Dans la taille des gemmes, on recherche principalement les zones de transition entre deux couleurs, afin d&apos;obtenir des pierres bicolores. Le mot amétrine provient de la contraction des mots améthyste et citrine, dont on a pris respectivement les deux premières et les deux dernières syllabes.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-      <%= image_tag "ametrines.jpg", :alt => "ametrines", :width => "100%", :height => "100%", :focusable => "false" %>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Diamant</h2>
-        <p class="lead">Le diamant est l&apos;allotrope de haute pression du carbone, métastable à basses température et pression. Moins stable que le graphite et la lonsdaléite qui sont les deux autres formes de cristallisation du carbone, sa renommée en tant que minéral lui vient de ses propriétés physiques et des fortes liaisons covalentes entre ses atomes arrangés selon un système cristallin cubique. En particulier, le diamant est le matériau naturel le plus dur (avec l&apos;indice maximal et il possède une très forte conductivité thermique. Ses propriétés font que le diamant trouve de nombreuses applications dans l&apos;industrie comme outils de coupe et d&apos;usinage, dans les sciences comme bistouris ou enclumes à diamant et dans la joaillerie pour ses propriétés optiques.</p>
-      </div>
-      <div class="col-md-5">
-      <%= image_tag "diamant.jpg", :alt => "diamant", :width => "100%", :height => "100%", :focusable => "false" %>
-      </div>
-    </div>
     </div>
   </div>
-  </body>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Amétrine</h2>
+      <p class="lead">L’amétrine est une variété gemme de quartz qui n&apos;est pas une variété d&apos;améthyste mais un mélange de citrine et d&apos;améthyste. Elle possède des couleurs très diverses qui vont des jaunes jusqu&apos;à la gamme des lilas, et des violets profonds.</p>
+      <p class="lead">Dans la taille des gemmes, on recherche principalement les zones de transition entre deux couleurs, afin d&apos;obtenir des pierres bicolores. Le mot amétrine provient de la contraction des mots améthyste et citrine, dont on a pris respectivement les deux premières et les deux dernières syllabes.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <%= image_tag "ametrines.jpg", :alt => "ametrines", :width => "100%", :height => "100%", :focusable => "false" %>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Diamant</h2>
+      <p class="lead" style="text-align:justify;"> Le diamant est l&apos;allotrope de haute pression du carbone, métastable à basses température et pression. Moins stable que le graphite et la lonsdaléite qui sont les deux autres formes de cristallisation du carbone,
+        sa renommée en tant que minéral lui vient de ses propriétés physiques et des fortes liaisons covalentes entre ses atomes arrangés selon un système cristallin cubique. En particulier,
+        le diamant est le matériau naturel le plus dur (avec l&apos;indice maximal et il possède une très forte conductivité thermique. Ses propriétés font que le diamant trouve de nombreuses applications dans l&apos; industrie comme outils de coupe et d&apos;
+        usinage, dans les sciences comme bistouris ou enclumes à diamant et dans la joaillerie pour ses propriétés optiques.</p></div>
+    <div class="col-md-5">
+      <%= image_tag "diamant.jpg", :alt => "diamant", :width => "100%", :height => "100%", :focusable => "false" %>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Rubis</h2>
+      <p class="lead" style="text-align:justify;">Sa couleur est causée principalement par la présence d&apos;oxyde de chrome (les autres variétés de corindon sont appelées saphirs).
+        Le rubis est classé comme pierre gemme en joaillerie, où il est utilisé. Les noces de rubis symbolisent les 35 ans de mariage dans le folklore français. Cette pierre précieuse symbolise le mois de juillet.
+        Le rubis fut la pierre la plus précieuse dans l&apos;ancien temps. On lui confère le mythe dans lequel le rubis représenterait le sang du Christ dans les sociétés chrétiennes.
+        Elle était la pierre précieuse qui ornait les anneaux cardinalices jusqu&apos;au Concile œcuménique Vatican II. </p>   </div>
+    <div class="col-md-5 order-md-1">
+      <%= image_tag "rubis.jpg", :alt => "rubis", :width => "100%", :height => "100%", :focusable => "false" %>
+    </div>
+  </div>
+
+</div>
+</div>
+</body>
 </html>

@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Lornoir - Pierres semi-précieuses</title>
-        <%= csrf_meta_tags %>
-        <%= csp_meta_tag %>
-        <%= stylesheet_link_tag    'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' %>
-        <%= javascript_include_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' %>
-    </head>
+<head>
+  <meta charset="utf-8">
+  <title>Lornoir - Pierres semi-précieuses</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag    'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' %>
+  <%= javascript_include_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' %>
+</head>
 
-  <body>
-    <div class="jumbotron text-center">
-        <div class="container">
-            <h1 class="display-3">Pierres semi-précieuses</h1>
-        </div>
+<body>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1 class="display-3">Pierres semi-précieuses</h1>
+  </div>
+</div>
+
+<div style="padding:0px 60px;">
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Péridot</h2>
+      <p class="lead" style="text-align:justify;">Le péridot est une pierre idiochromatique : cela signifie qu&apos;elle ne se présente que sous une unique couleur, le vert,
+        et que cette teinte n’est pas produite par la présence d’inclusions mais est due à la composition chimique du minéral lui-même.
+        Les nuances lumineuses du péridot se marient à merveille avec toutes les couleurs de métaux ; cependant, pour les plus petites pierres, une monture en argent, or blanc ou or noir
+        laissera à la gemme toute la possibilité d&apos;exprimer sa beauté. Les pierres plus imposantes s&apos;allieront aussi bien avec l&apos;or jaune ou rose.</p>
     </div>
-    
-    <div style="padding:0px 60px;">
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Nom</h2>
-        <p class="lead">Txt</p>
-      </div>
-      <div class="col-md-5">
+    <div class="col-md-5">
       <%= image_tag "peridot.jpg", :alt => "peridot", :width => "100%", :height => "100%", :focusable => "false" %>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Amétrine</h2>
-        <p class="lead">L’amétrine est une variété gemme de quartz qui n&apos;est pas une variété d&apos;améthyste mais un mélange de citrine et d&apos;améthyste. Elle possède des couleurs très diverses qui vont des jaunes jusqu&apos;à la gamme des lilas, et des violets profonds.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-      <%= image_tag "ametrines.jpg", :alt => "ametrines", :width => "100%", :height => "100%", :focusable => "false" %>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Diamant</h2>
-        <p class="lead">Le diamant est l&apos;allotrope de haute pression du carbone, métastable à basses température et pression. Moins stable que le graphite et la lonsdaléite qui sont les deux autres formes de cristallisation du carbone, sa renommée en tant que minéral lui vient de ses propriétés physiques et des fortes liaisons covalentes entre ses atomes arrangés selon un système cristallin cubique. En particulier, le diamant est le matériau naturel le plus dur (avec l&apos;indice maximal et il possède une très forte conductivité thermique. Ses propriétés font que le diamant trouve de nombreuses applications dans l&apos;industrie comme outils de coupe et d&apos;usinage, dans les sciences comme bistouris ou enclumes à diamant et dans la joaillerie pour ses propriétés optiques.</p>
-      </div>
-      <div class="col-md-5">
-      <%= image_tag "diamant.jpg", :alt => "diamant", :width => "100%", :height => "100%", :focusable => "false" %>
-      </div>
-    </div>
     </div>
   </div>
-  </body>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Amétrine</h2>
+      <p class="lead" style="text-align:justify;">L&apos;amétrine est une variété gemme de quartz qui n&apos;est pas une variété d&apos;améthyste mais un mélange de citrine et d&apos;améthyste.
+        Elle possède des couleurs très diverses qui vont des jaunes jusqu&apos;à la gamme des lilas, et des violets profonds.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <%= image_tag "ametrines.jpg", :alt => "ametrines", :width => "100%", :height => "100%", :focusable => "false" %>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Spinelle</h2>
+      <p class="lead" style="text-align:justify;">C&apos;est une pierre fine utilisée en joaillerie. Celui de couleur rouge a longtemps été confondu avec le rubis,
+        ce qui lui vaut une grande quantité de synonymes. Ses principaux pays producteurs sont le Sri Lanka, la Birmanie et le Tadjikistan. Bien que considérés comme rouges, le spinelle se trouve
+        dans une belle gamme de couleurs pastels. Ces exceptionnelles nuances de rose, violet, orange, bleu, plus toutes les combinaisons entre elles,
+        font des spinelles quelques-unes des pierres les plus désirables au monde.  </p>
+    </div>
+    <div class="col-md-5">
+      <%= image_tag "spinelle_rouge.jpg", :alt => "spinelle rouge", :width => "100%", :height => "100%", :focusable => "false" %>
+    </div>
+
+  </div>
+</div>
+</div>
+</body>
 </html>
