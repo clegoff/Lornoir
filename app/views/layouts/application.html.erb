@@ -11,27 +11,32 @@
 
   <body>
   <%-# Barre de menu -%>
-    <header>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 navbar-dark bg-dark border-bottom shadow-sm">
-      <h5 class="my-0 mr-md-auto font-weight-normal text-light" href="/home"><a class="text-light" href="home/">Lornoir</a></h5>
-    <nav class="my-2 my-md-0 mr-md-3">
-      <a class="p-2 text-light" href="/gemmes">Pierres précieuses</a>
-      <a class="p-2 text-light" href="/pierres">Pierres semi-précieuses</a>
-      <a class="p-2 text-light" href="/pannier">Mon panier</a>
-      <a class="p-2 text-light" href="/about">À propos de nous</a>
-    </nav>
-    <a class="btn btn-outline-light" href="/users/sign_in">Connexion</a>
+  <!-- Page Preloder -->
+  <div id="preloder">
+    <div class="loader"></div>
   </div>
-    </header>
 
-    <%= yield %>
-
-    <div style="padding:0px 60px;">
-      <hr>
+  <header>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 navbar-dark bg-dark border-bottom shadow-sm">
+      <h5 class="my-0 mr-md-auto font-weight-normal text-light"><a class="text-light" href="/home">Lornoir</a></h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-light" href="/gemmes">Pierres précieuses</a>
+        <a class="p-2 text-light" href="/pierres">Pierres semi-précieuses</a>
+        <a class="p-2 text-light" href="/pannier">Mon panier</a>
+      </nav>
+      <a class="btn btn-outline-light" href="/login">Connexion</a>
     </div>
+  </header>
 
-    <footer class="container" style="padding:0px 30px;">
-      <p>&copy; Lornoir 2017-2019</p>
-    </footer>
+  <%= yield %>
+
+  <div style="padding:0px 60px;">
+    <hr>
+  </div>
+
+  <footer class="container" style="padding:0px 30px;">
+    <p class="float-right"><a href="/about">À propos de nous</a></p>
+    <p>&copy; 2017-2019 Lornoir, Inc. &middot;</p>
+  </footer>
   </body>
 </html>
