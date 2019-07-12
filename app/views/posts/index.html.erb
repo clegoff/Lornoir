@@ -1,159 +1,167 @@
-<main role="main">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lornoir</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' %>
+    <%= javascript_include_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' %>
+  </head>
 
-  <section class="jumbotron text-center">
-    <div class="container">
-      <h1 class="jumbotron-heading">Album example</h1>
-      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-      <p>
-        <a href="#" class="btn btn-primary my-2">Main call to action</a>
-        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-      </p>
-    </div>
-  </section>
+  <body>
+    <main role="main">
+    <div class="album py-5 bg-light">
 
-  <div class="album py-5 bg-light">
-    <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-3 shadow-sm">
+            <%= image_tag "obsidian.jpg", :alt => "obsidian", :width => "100%", :height => "225", :focusable => "false" %>
+              <div class="card-body">
+              <h3>Obsidienne</h3>
+                <p class="text-justify">L&apos;obsidienne est une roche volcanique vitreuse et riche en silice. De couleur grise, vert foncée, 
+                rouge ou noire, elle est issue d&apos;une lave acide. </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Acheter</button>
+                  </div>                  
+                  <small class="text-muted">59,99 €</small>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <%= image_tag "diamond_bort.jpg", :alt => "bort", :width => "100%", :height => "225", :focusable => "false" %>
+              <div class="card-body">
+              <h3>Bort</h3>
+                <p class="card-text">Le mot bort est utilisé pour définir le nom de diamand noir. Nous utilisons également cette pierre pour
+                 confectionner nos propres bijoux.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Acheter</button>
+                  </div>
+                  <small class="text-muted">90,99 €</small>
                 </div>
-                <small class="text-muted">9 mins</small>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <%= image_tag "spinelle_rouge.jpg", :alt => "spinelle", :width => "100%", :height => "225", :focusable => "false", :class => 'img-responsive center-block' %>
+              <div class="card-body">
+              <h3>Spinelle</h3>
+                <p class="card-text">Le spinelle est une espèce minérale de la famille des oxydes de magnésium et d&apos;aluminium. Celui de couleur rouge a longtemps été confondu avec le rubis.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Acheter</button>
+                  </div>
+                  <small class="text-muted">13,59 €</small>
                 </div>
-                <small class="text-muted">9 mins</small>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+            <%= image_tag "emeraude.jpg", :alt => "emeraude", :width => "100%", :height => "225", :focusable => "false" %>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
+              <h3>Emeraude</h3>
+                <p class="card-text">Emeraude de 1.18 carats d&apos;une superbe qualité, quelques inclusions visibles mais très lumineuse en provenance du Minas Gérais au Brésil. De taille ovale cette émeraude d&apos;une superbe qualité pourra agrémenter une belle mise en pierre.</p>
+                <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Acheter</button>
                 </div>
-                <small class="text-muted">9 mins</small>
+                  <small class="text-muted">2 124,00 €</small>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+            <%= image_tag "diamant.jpg", :alt => "diamant", :width => "100%", :height => "225", :focusable => "false" %>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              <h3>Diamant</h3>
+                <p class="card-text">Le diamant est le minéral le plus dur référencé sur notre terre, et la gemme la plus convoitée sur le marchée des pierres précieuses.
+                Nos calibrés de diamants de 0.015 carats pour vos mises en pierres de qualité G/H VS.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Acheter</button>
+                  </div>
+                  <small class="text-muted">81,60 €</small>
                 </div>
-                <small class="text-muted">9 mins</small>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+            <%= image_tag "saphir.jpg", :alt => "saphir", :width => "100%", :height => "225", :focusable => "false" %>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              <h3>Saphir</h3>
+                <p class="card-text">Saphirs bleu royale de très grande qualité de Ceylan d&apos;un poids de 4.25 carats. On trouve également des saphirs de couleur rose, jaune, violet et d&apos;autres qui sont incolores ou avec d&apos;autres tons. La variété bleue est la plus connue.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Acheter</button>
+                  </div>
+                  <small class="text-muted">3 070,23 €</small>
                 </div>
-                <small class="text-muted">9 mins</small>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+            <%= image_tag "zircon.jpg", :alt => "zircon", :width => "100%", :height => "225", :focusable => "false" %>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              <h3>Zircon</h3>
+                <p class="card-text">Le zircon présente une réfringence élevée et sa forte dispersion lui donnent un éclat vif et des feux intenses. Le zircon est un minéral du groupe des silicates, sous-groupe des nésosilicates.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Acheter</button>
+                  </div>
+                  <small class="text-muted">707,96 €</small>
                 </div>
-                <small class="text-muted">9 mins</small>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+            <%= image_tag "ametrines.jpg", :alt => "ametrines", :width => "100%", :height => "225", :focusable => "false" %>
+              <div class="card-body">
+              <h3>Amétrine</h3>
+                <p class="card-text">Splendide gemme de cette amétrine aux couleurs plus où moins soutenue du violet et de jaune. Une pierre de qualités exceptionnelles de 13.20 carats en provenance des gisements du Brésil.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Acheter</button>
+                  </div>
+                  <small class="text-muted">290,40 €</small>
                 </div>
-                <small class="text-muted">9 mins</small>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+            <%= image_tag "peridot.jpg", :alt => "peridot", :width => "100%", :height => "225", :focusable => "false" %>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              <h3>Péridot</h3>
+                <p class="card-text">Le péridot est un silicate ferreux de magnésium appelée aussi olivine et chrysolite. Une gemme de 2.60 carats de couleur jaune vert assez sympa de taille ovale.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Acheter</button>
+                  </div>
+                  <small class="text-muted">99,84 €</small>
                 </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-</main>
+  
+  </main>
+  </body>
+</html>
